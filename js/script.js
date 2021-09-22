@@ -1,3 +1,25 @@
+const API_KEY = 'ef19192120864351a616b5a6401950c1'
+
+// This is the endpoint URL -- https://api.covidactnow.org/v2/county/{fips}.timeseries.json?apiKey=YOUR_KEY_HERE
+
+const BASE_URL = 'https://api.covidactnow.org/v2/county/'
+
+const $input = $('input')
+const $form = $('form')
+
+const handleGetData = event => {
+    event.preventDefault()
+    const query = $input.val()
+    $.ajax('${BASE_URL}${query}&.timeseries.json?api_key=${API_KEY}')
+     .then(data => {
+        console.log(data)
+    }), (err => {
+        console.log(err)
+    })        
+}
+
+$form.on('submit', handleGetData)
+
 google.charts.load('current', {'packages':['line', 'corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
@@ -9,7 +31,7 @@ var data = new google.visualization.DataTable();
 data.addColumn('date', 'Month');
 data.addColumn('number', "Vaccination Rate");
 data.addColumn('number', "New Cases per 100,000");
-data.addColumn('number', "Deaths pert 1,000,000");
+data.addColumn('number', "Deaths per 100,000");
 
 data.addRows([
   [new Date(2014, 0),  .26,  500,   50],
@@ -28,11 +50,12 @@ data.addRows([
   [new Date(2014, 11), .50,  600,   47],
 ]);
 
+
 var materialOptions = {
-  chart: {
+    chart: {
     title: 'County Name',
-    legend.position: bottom,
   },
+   
   width: 900,
   height: 500,
   series: {
@@ -53,10 +76,9 @@ var materialOptions = {
 function drawMaterialChart() {
   var materialChart = new google.charts.Line(chartDiv);
   materialChart.draw(data, materialOptions);
-  button.innerText = 'Change to Classic';
-  button.onclick = drawClassicChart;
 }
 
 drawMaterialChart();
 
 }
+
