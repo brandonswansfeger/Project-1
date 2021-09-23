@@ -47,7 +47,7 @@ function drawStuff() {
     ['County Name', 'New Cases per 100,000', 'Deaths per 10,000'],
     [' ', 20000, 10000],
     ['Cases per 100,000', $totalCases, $totalDeaths],
-    ['Deaths per 10,000', , 2000],
+    ['Deaths per 10,000', ,' '],
     [' ', 20000, 10000],
     ]);
 
