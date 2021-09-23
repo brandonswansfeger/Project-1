@@ -1,84 +1,102 @@
 const API_KEY = 'ef19192120864351a616b5a6401950c1'
 
-// This is the endpoint URL -- https://api.covidactnow.org/v2/county/{fips}.timeseries.json?apiKey=YOUR_KEY_HERE
+// This is the endpoint URL -- https://api.covidactnow.org/v2/county/01001.timeseries.json?apiKey=ef19192120864351a616b5a6401950c1
 
 const BASE_URL = 'https://api.covidactnow.org/v2/county/'
 
 const $input = $('input')
 const $form = $('form')
+const $vax = $('#vax')
+const $totalCases = $('#totalCases')
+const $totalDeaths = $('#totalDeaths')
+const $vaxx = $('#vax')
+const $countyName = $('#countyName')
+const $button2 = $('#btn')
 
 const handleGetData = event => {
     event.preventDefault()
     const query = $input.val()
-    $.ajax('${BASE_URL}${query}&.timeseries.json?api_key=${API_KEY}')
-     .then(data => {
-        console.log(data)
-    }), (err => {
-        console.log(err)
-    })        
-}
-
+    $.ajax(`https://api.covidactnow.org/v2/county/${query}.json?apiKey=${API_KEY}`)
+     .then(function(data) {
+            $vax.text(data.metrics.vaccinationsInitiatedRatio);
+            $totalCases.text(data.actuals.cases);
+            $totalDeaths.text(data.actuals.deaths);
+            $countyName.text(data.county);
+            var pop = (data.population);
+        // console.log(totalCases);
+        //     console.log(totalDeaths);
+            // console.log(pop);
+        //     console.log(countyName);
+        //     console.log(vax);
+     }, 
+            function(error) {
+        console.log(error);
+    });
+} 
 $form.on('submit', handleGetData)
 
-google.charts.load('current', {'packages':['line', 'corechart']});
-google.charts.setOnLoadCallback(drawChart);
+google.charts.load('current', {'packages':['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawStuff);
 
-function drawChart() {
+function drawStuff() {
 
-var chartDiv = document.getElementById('chart_div');
+  var button = document.getElementById('change-chart');
+  var chartDiv = document.getElementById('chart_div');
 
-var data = new google.visualization.DataTable();
-data.addColumn('date', 'Month');
-data.addColumn('number', "Vaccination Rate");
-data.addColumn('number', "New Cases per 100,000");
-data.addColumn('number', "Deaths per 100,000");
+  var data = google.visualization.arrayToDataTable([
+    ['County Name', 'New Cases per 100,000', 'Deaths per 10,000'],
+    [' ', 20000, 10000],
+    ['Cases per 100,000', $totalCases, $totalDeaths],
+    ['Deaths per 10,000', , 2000],
+    [' ', 20000, 10000],
+    ]);
 
-data.addRows([
-  [new Date(2014, 0),  .26,  500,   50],
-  [new Date(2014, 1),  .30,  700,   47],
-  [new Date(2014, 2),  .31,  800,   47],
-  [new Date(2014, 2),  .31,  800,   47],
-  [new Date(2014, 2),  .31,  800,   47],  
-  [new Date(2014, 3),  .36,  900,   47],
-  [new Date(2014, 4),  .40,  950,   47],
-  [new Date(2014, 5),  .41,  975,   47],
-  [new Date(2014, 6),  .41,  1000,   47],
-  [new Date(2014, 7),  .42,  975,   47],
-  [new Date(2014, 8),  .44,  975,   47],
-  [new Date(2014, 9),  .46,  800,   47],
-  [new Date(2014, 10), .48,  700,   47],
-  [new Date(2014, 11), .50,  600,   47],
-]);
-
-
-var materialOptions = {
+  var materialOptions = {
+    width: 900,
     chart: {
-    title: 'County Name',
-  },
-   
-  width: 900,
-  height: 500,
-  series: {
-    // Gives each series an axis name that matches the Y-axis below.
-    0: {axis: 'VRate'},
-    1: {axis: 'Cases'}
-   
-  },
-  axes: {
-    // Adds labels to each axis; they don't have to match the axis names.
-    y: {
-      Temps: {label: 'Vaccintion Rate'},
-      Daylight: {label: 'Infection Rate, Cases/100,00, Deaths/100,000'}
+      title: ' ',
+      subtitle: ' '
+    },
+    series: {
+      0: { axis: 'Cases per 100,000' }, // Bind series 0 to an axis named 'distance'.
+      1: { axis: 'Deaths per 10,000' } // Bind series 1 to an axis named 'brightness'.
+    },
+    axes: {
+      y: {
+        distance: {label: ' '}, // Left y-axis.
+        brightness: {side: 'right', label: ' '} // Right y-axis.
+      }
     }
+  };
+
+  var classicOptions = {
+    width: 900,
+    series: {
+      0: {targetAxisIndex: 0},
+      1: {targetAxisIndex: 1}
+    },
+    title: 'County Name',
+    vAxes: {
+      // Adds titles to each axis.
+      0: {title: ' '},
+      1: {title: ' '}
+    }
+  };
+
+  function drawMaterialChart() {
+    var materialChart = new google.charts.Bar(chartDiv);
+    materialChart.draw(data, google.charts.Bar.convertOptions(materialOptions));
+    button.innerText = 'Change to Classic';
+    button.onclick = drawClassicChart;
   }
+
+  function drawClassicChart() {
+    var classicChart = new google.visualization.ColumnChart(chartDiv);
+    classicChart.draw(data, classicOptions);
+    button.innerText = 'Change to Material';
+    button.onclick = drawMaterialChart;
+  }
+
+  drawMaterialChart();
 };
-
-function drawMaterialChart() {
-  var materialChart = new google.charts.Line(chartDiv);
-  materialChart.draw(data, materialOptions);
-}
-
-drawMaterialChart();
-
-}
 

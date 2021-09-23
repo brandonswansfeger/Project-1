@@ -14,12 +14,73 @@ div.container {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+    align-content: space-between;
+}
+
+h2 {
+    justify-content: center;
+    margin-left: 33%;
+}
+
+.button-primary {
+    width: 100%;
 }
 
 h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 22px;
     margin-top: 2.5px;
+}
+
+h3 {
+    font-size: 22px;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-left: 33%;
+    margin-top: 0;
+}
+
+#vax {
+    display: flex;
+    font-size: 24px;
+    align-content: center;
+    color: blue;
+    background: rgb(210, 183, 30);
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 0;
+
+}
+
+#totalDeaths {
+    color:red;
+    font-size: 16px;
+    font-weight: 900;
+    justify-content: left;
+    margin-left: 20px;
+}
+
+#totalCases {
+    color: blue;
+    font-size: 16px;
+    font-weight: 900;
+    justify-content: left;
+    margin-left: 20px;
+
+}
+
+p2 {
+ margin-left: 200px;
+}
+
+div.dataPull {
+    display: flex;
+    align-items: left;
+    margin-left: 100px;
+    justify-items: center;
+   
+
+
 }
 
 

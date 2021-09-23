@@ -7,26 +7,40 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="/js/script.js"></script>
+    <script defer type="text/javascript" src="/js/script.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Vaccination Rate, New Cases, Deaths, Infection Rate</title>
 </head>
 <body>
+   
    <div class="container">
-        <div class="title"><h1>Vaccination Rate, New Cases, Deaths, Infection Rate by County</h1> </div>
-        <div id="chart_div"></div>
+        <div class="title"><h1>Vaccination Rate, Cases,and Deaths by County</h1> </div>
+        <h2 id='countyName'></h2>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.nrcs.usda.gov/wps/portal/nrcs/detail/national/home/?cid=nrcs143_013697">FIPS codes list</a>
         <div class="input-form">
             <form>
                 <div class="row">
                     <div class="nine-columns">
-                        <input type="text" class="u-full-width" value="" placeholder="Enter County FIPS number">                    </div>
+                        <input type="text" class="u-full-width" value="" placeholder="Enter County FIPS Code">                    </div>
                         <div class="three-columns">
-                            <button class="button-primary">Submit</button>
+                            <button type="submit" class="button-primary">Submit</button>
                         </div>
-                </div>
+                </div> 
+                <p id ='vax'></p>
+        <h3>Vaccination Rate (First Dose)</h3>
             </form>
+       <div class="dataPull">  
+            <p>Cases per 100,000</p>
+            <p id ='totalCases'></p>
+            <p2>Deaths per 10,000</p2>
+            <p id ='totalDeaths'></p>
+        </div>
+        <div id="chart_div" style="width: 800px; height: 300px;"></div>
+        <button id="change-chart">Change to Classic</button>
+        
+          
         </div>
    </div>
   </body>
