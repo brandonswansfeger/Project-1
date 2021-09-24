@@ -34,9 +34,10 @@ h1 {
 
 h3 {
     font-size: 22px;
+    background: rgb(210, 183, 30);
     align-content: center;
     justify-content: space-evenly;
-    margin-left: 33%;
+    text-align: center;
     margin-top: 0;
 }
 
@@ -54,7 +55,7 @@ h3 {
 
 #totalDeaths {
     color:red;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 900;
     justify-content: left;
     margin-left: 20px;
@@ -63,7 +64,7 @@ h3 {
 
 #totalCases {
     color: blue;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 900;
     justify-content: left;
     margin-left: 20px;
@@ -84,4 +85,9 @@ div.dataPull {
 
 }
 
+source {
+    font-style: italic;
+    text-align:right;
+    margin-right: 0:
+}
 

@@ -1,9 +1,7 @@
+// variables
+
 const API_KEY = 'ef19192120864351a616b5a6401950c1'
-
-// This is the endpoint URL -- https://api.covidactnow.org/v2/county/01001.timeseries.json?apiKey=ef19192120864351a616b5a6401950c1
-
 const BASE_URL = 'https://api.covidactnow.org/v2/county/'
-
 const $input = $('input')
 const $form = $('form')
 const $vax = $('#vax')
@@ -12,6 +10,8 @@ const $totalDeaths = $('#totalDeaths')
 const $vaxx = $('#vax')
 const $countyName = $('#countyName')
 const $button2 = $('#btn')
+
+// ajax / api function
 
 const handleGetData = event => {
     event.preventDefault()
@@ -35,6 +35,8 @@ const handleGetData = event => {
 } 
 $form.on('submit', handleGetData)
 
+//Chart
+
 google.charts.load('current', {'packages':['corechart', 'bar']});
 google.charts.setOnLoadCallback(drawStuff);
 
@@ -44,7 +46,7 @@ function drawStuff() {
   var chartDiv = document.getElementById('chart_div');
 
   var data = google.visualization.arrayToDataTable([
-    ['County Name', 'New Cases per 100,000', 'Deaths per 10,000'],
+    ['County Name', 'Total Cases', 'Total Deaths'],
     [' ', 20000, 10000],
     ['Cases per 100,000', $totalCases, $totalDeaths],
     ['Deaths per 10,000', ,' '],
@@ -58,8 +60,8 @@ function drawStuff() {
       subtitle: ' '
     },
     series: {
-      0: { axis: 'Cases per 100,000' }, // Bind series 0 to an axis named 'distance'.
-      1: { axis: 'Deaths per 10,000' } // Bind series 1 to an axis named 'brightness'.
+      0: { axis: 'Total Cases' }, // Bind series 0 to an axis named 'distance'.
+      1: { axis: 'Total Deaths' } // Bind series 1 to an axis named 'brightness'.
     },
     axes: {
       y: {
