@@ -1,6 +1,8 @@
-# Project-1 - Line Graph: Georgia Counties' Vaccination Rates, Cases per 100,000, and Deaths per 100,000
+# Project-1 - Covid-19 Key Indicators by County 
 
+Covid-19 Vaccination Rate (first dose), Total Cases, and Total Deaths by County
 
+    Souce data from Covid Act Now (CAN) at https://covidactnow.org
 
 # Technologies Used
 
@@ -10,8 +12,9 @@
 
 # Screenshots
 
+
 # Geting Started
 
-Click here to see the deployed Project
+ https://link)https://brandonswansfeger.github.io/Project-1/ 
 
 # Future Enhancements
