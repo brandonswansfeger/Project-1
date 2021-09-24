@@ -1,5 +1,3 @@
-// variables
-
 const API_KEY = 'ef19192120864351a616b5a6401950c1'
 const BASE_URL = 'https://api.covidactnow.org/v2/county/'
 const $input = $('input')
@@ -11,7 +9,7 @@ const $vaxx = $('#vax')
 const $countyName = $('#countyName')
 const $button2 = $('#btn')
 
-// ajax / api function
+
 
 const handleGetData = event => {
     event.preventDefault()
