@@ -12,6 +12,7 @@ Covid-19 Vaccination Rate (first dose), Total Cases, and Total Deaths by County
 
 # Screenshots
 
+https://ibb.co/dMZQSHq
 
 # Geting Started
 
