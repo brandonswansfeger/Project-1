@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script defer type="text/javascript" src="js/script.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
@@ -32,13 +31,19 @@
         <h3>Vaccination Rate (First Dose)</h3>
             </form>
        <div class="dataPull">  
-            <p>Total Cases</p>
+            <p>Cases per 100</p>
             <p id ='totalCases'></p>
-            <p2>Total Deaths</p2>
+            <p2>Deaths per 10,000</p2>
             <p id ='totalDeaths'></p>
         </div>
-        <div id="chart_div" style="width: 65%; height: 300px;"></div>
-        <button id="change-chart">Change to Classic</button>
+    </div>
+        <div class="containerChart" >
+            <div class="bars">
+                <div class="bar1">Bar1</div>
+                <div class="bar2">Bar2</div>  
+            </div>
+           
+        </div>
         <div class="source">
             <p>Source: Covid Act Now (CAN) https://covidactnow.org</p>
         </div>

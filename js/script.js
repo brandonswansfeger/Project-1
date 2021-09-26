@@ -17,86 +17,62 @@ const handleGetData = event => {
     $.ajax(`https://api.covidactnow.org/v2/county/${query}.json?apiKey=${API_KEY}`)
      .then(function(data) {
             $vax.text(data.metrics.vaccinationsInitiatedRatio);
-            $totalCases.text(data.actuals.cases);
             $totalDeaths.text(data.actuals.deaths);
             $countyName.text(data.county);
-            var pop = (data.population);
+            pop = (data.population);
+            casesPer = (data.actuals.cases) / pop
+            console.log(casesPer)
+            casesPer100 = casesPer * 100
+            console.log(casesPer100)
+            totalCases = (data.actuals.cases)
+            console.log(totalCases)
+            casesScale = casesPer100 * 10
+            $(".bar1").height(casesScale + "px");
+            
+            function round(value, precision) {
+              var multiplier = Math.pow(10, precision || 0);
+              return Math.round(value * multiplier) / multiplier;
+            }
+            
+            roundedCases = round(casesPer100, 1)
+                 
+            $totalCases.text(roundedCases);
+            totalDeaths = (data.actuals.deaths)
+            deathsPer = (data.actuals.deaths) / pop
+            deathsPer100 = deathsPer * 10000
+           console.log(totalDeaths)
+            deathsScale = deathsPer100 * 10
+            $(".bar2").height(deathsScale + "px");
+            
+            function round(value, precision) {
+              var multiplier = Math.pow(10, precision || 0);
+              return Math.round(value * multiplier) / multiplier;
+            }
+            
+            roundedDeaths = round(deathsPer100, 1)
+                 
+            $totalDeaths.text(roundedDeaths);
+
+
         // console.log(totalCases);
         //     console.log(totalDeaths);
             // console.log(pop);
         //     console.log(countyName);
         //     console.log(vax);
+      
      }, 
             function(error) {
         console.log(error);
     });
 } 
-$form.on('submit', handleGetData)
+$form.on('submit', handleGetData);
 
-//Chart
+$(".bar1").height("50px");
 
-google.charts.load('current', {'packages':['corechart', 'bar']});
-google.charts.setOnLoadCallback(drawStuff);
 
-function drawStuff() {
 
-  var button = document.getElementById('change-chart');
-  var chartDiv = document.getElementById('chart_div');
 
-  var data = google.visualization.arrayToDataTable([
-    ['County Name', 'Total Cases', 'Total Deaths'],
-    [' ', 20000, 10000],
-    ['Cases per 100,000', $totalCases, $totalDeaths],
-    ['Deaths per 10,000', ,' '],
-    [' ', 20000, 10000],
-    ]);
-
-  var materialOptions = {
-    width: 900,
-    chart: {
-      title: ' ',
-      subtitle: ' '
-    },
-    series: {
-      0: { axis: 'Total Cases' }, // Bind series 0 to an axis named 'distance'.
-      1: { axis: 'Total Deaths' } // Bind series 1 to an axis named 'brightness'.
-    },
-    axes: {
-      y: {
-        distance: {label: ' '}, // Left y-axis.
-        brightness: {side: 'right', label: ' '} // Right y-axis.
-      }
-    }
-  };
-
-  var classicOptions = {
-    width: 900,
-    series: {
-      0: {targetAxisIndex: 0},
-      1: {targetAxisIndex: 1}
-    },
-    title: 'County Name',
-    vAxes: {
-      // Adds titles to each axis.
-      0: {title: ' '},
-      1: {title: ' '}
-    }
-  };
-
-  function drawMaterialChart() {
-    var materialChart = new google.charts.Bar(chartDiv);
-    materialChart.draw(data, google.charts.Bar.convertOptions(materialOptions));
-    button.innerText = 'Change to Classic';
-    button.onclick = drawClassicChart;
-  }
-
-  function drawClassicChart() {
-    var classicChart = new google.visualization.ColumnChart(chartDiv);
-    classicChart.draw(data, classicOptions);
-    button.innerText = 'Change to Material';
-    button.onclick = drawMaterialChart;
-  }
-
-  drawMaterialChart();
-};
-
+// document.querySelector('button').onclick = function() {
+//   var barOne = document.getElementById('bar1');
+//   barOne.style.width = "500px";
+// }
