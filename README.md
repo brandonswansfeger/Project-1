@@ -16,6 +16,6 @@ https://ibb.co/dMZQSHq
 
 # Geting Started
 
- https://link)https://brandonswansfeger.github.io/Project-1/
+https://brandonswansfeger.github.io/Project-1/
 
 # Future Enhancements
