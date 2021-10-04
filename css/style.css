@@ -172,6 +172,7 @@ div.bars1section {
     align-items: flex-end;
     border: 10px solid rgb(155, 137, 137);
     height: 350px;
+    justify-content: right;
 }
 
 div.bars2section {
