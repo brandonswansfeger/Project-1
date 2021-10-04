@@ -213,6 +213,7 @@ source {
     justify-content: bottom;
     align-items: baseline;
     padding: 10px;
+    
   
 }
 
@@ -221,6 +222,7 @@ source {
     height: 100px;
     margin-left: 30px;
     margin-right: 10px;
+    color: white;
 }
 
 .bar2 {
@@ -228,6 +230,7 @@ source {
     height: 50px;
     margin-left: 30px;
     margin-right: 10px;
+    color: white;
 }
 
 .bar3 {
@@ -235,6 +238,7 @@ source {
     height: 100px;
     margin-left: 30px;
     margin-right: 10px;
+    color: white;
 }
 
 .bar4 {
@@ -242,6 +246,7 @@ source {
     height: 50px;
     margin-left: 30px;
     margin-right: 10px;
+    color: white;
 }
 
 
