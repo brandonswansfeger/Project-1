@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,39 +13,67 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Vaccination Rate, New Cases, Deaths, Infection Rate</title>
 </head>
-<body>
-   
-   <div class="container">
-        <div class="title"><h1>Vaccination Rate, Cases,and Deaths by County</h1> </div>
-        <h2 id='countyName'></h2>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.nrcs.usda.gov/wps/portal/nrcs/detail/national/home/?cid=nrcs143_013697">FIPS codes list</a>
-         <form>
-           <input type="text" class="u-full-width" value="" placeholder="Enter County FIPS Code">                    </div>
-           <button type="submit" class="button-primary">Submit</button>
-          </form> 
-             <p id ='vax'></p>
-         
-           <h3>Vaccination Rate (First Dose)</h3>
 
-       <div class="dataPull">  
-            <p>Cases per 100</p>
-            <p id ='totalCases'></p>
-            <p2>Deaths per 10,000</p2>
-            <p id ='totalDeaths'></p>
+<body>
+
+    <div class="container">
+        <div class="title">
+            <h1>Vaccination Rate, Cases,and Deaths by County</h1>
+        </div>
+
+        <a target="_blank" rel="noopener noreferrer"
+            href="https://www.nrcs.usda.gov/wps/portal/nrcs/detail/national/home/?cid=nrcs143_013697">FIPS codes
+            list</a>
+        <form id='form1'>
+            <input type="text" class="u-full-width" value="" id="inputOne" placeholder="Enter County FIPS Code">
+            <button type="submit" class="button-primary">Submit</button>
+        </form>
+        <form id='form2'>
+            <input type="text" class="u-full-width" value="" id="inputTwo" placeholder="Enter County FIPS Code">
+            <button type="submit" class="button-primary">Submit</button>
+        </form>
+        <div class="countyNamesSection">
+            <h2 id='countyNameOne'></h2>
+            <h2 id='countyNameTwo'></h2>
+        </div>
+        <div class="vaxContainer">
+            <div class="vaxOneContainer">
+                <h3 id='vaxOne'></h3>
+                <h3>Vaccination Rate (First Dose)</h3>
+            </div>
+            <div class="vaxTwoContainer">
+                <h3 id='vaxTwo'></h3>
+                <h3>Vaccination Rate (First Dose)</h3>
+            </div>            
+        </div>
+        <div class="casesSection">
+            <div class="chartOne">
+                    <p>Cases per 100</p>
+                    <p id='totalCasesOne'></p>
+                    <p2>Deaths per 10,000</p2>
+                    <p id='totalDeathsOne'></p>
+            </div>
+            <div class="chartTwo">
+                    <p>Cases per 100</p>
+                    <p5 id='totalCasesTwo'></p5>
+                    <p2>Deaths per 10,000</p2>
+                    <p6 id='totalDeathsTwo'></p6>
+            </div>
+        </div>
+        <div class="barsSection">
+            <div class="bars1section">
+                    <div class="bar1">Bar 1</div>
+                    <div class="bar2">Bar 2</div>
+            </div>
+            <div class="bars2section">
+                <div class="bar3">Bar1</div>
+                <div class="bar4">Bar2</div>
+            </div>
         </div>
     </div>
-        <div class="containerChart" >
-            <div class="bars">
-                <div class="bar1">Bar1</div>
-                <div class="bar2">Bar2</div>  
-            </div>
-           
-        </div>
-        <div class="source">
-            <p>Source: Covid Act Now (CAN) https://covidactnow.org</p>
-        </div>
-          
-        </div>
-   </div>
-  </body>
+    <div class="source">
+        <p>Source: Covid Act Now (CAN) https://covidactnow.org</p>
+    </div>
+</body>
+
 </html>

@@ -2,12 +2,12 @@
     height: 100%;
 }
 
-body {
+/* body {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 10px; */
 }
 
 div.container {
@@ -15,33 +15,101 @@ div.container {
     flex-direction: column;
     margin-top: 10px;
     align-content: space-between;
+    justify-content: center;
+    height: 900px;
 }
 
 h2 {
+    color: black;
     justify-content: center;
-    margin-left: 33%;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    width: 40%;
 }
 
-.button-primary {
+div.countyNamesSection {
+    display: inline-flex;
     width: 100%;
-}
-
-h1 {
-    text-align: center;
-    font-size: 22px;
-    margin-top: 2.5px;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 h3 {
     font-size: 22px;
     background: rgb(210, 183, 30);
     align-content: center;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
-#vax {
+
+div.vaxContainer {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+   
+}
+div.vaxOneContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 40%;
+}
+
+div.vaxTwoContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 40%;
+}
+
+div.casesSection {
+    display: inline-flex;
+    justify-items: center;
+    align-items: stretch;
+    width: 100%;
+    padding: 20px;
+    
+}
+
+div.chartOne {
+    display: inline-flex;
+    margin-left: 10%;
+    margin-right: 20px;
+    width: 40%;
+} 
+
+div.chartTwo {
+    display: inline-flex;
+    margin-left: 20px;
+    margin-right: 10%;
+    width: 40%
+}
+
+div.deathsOne (
+    display: flex;
+    flex-direction: inline;
+) */
+
+#totalDeathsOne {
+    color:red;
+    font-size: 24px;
+    font-weight: 900;
+    margin-left: 30px;
+}
+
+#totalCasesOne {
+    color: blue;
+    font-size: 24px;
+    font-weight: 900;
+    margin-left: 10px;
+}
+/* #vaxOne {
     display: flex;
     font-size: 24px;
     align-content: center;
@@ -49,64 +117,96 @@ h3 {
     background: rgb(210, 183, 30);
     justify-content: center;
     margin-top: 15px;
-    margin-bottom: 0;
+    margin-bottom: 0; */
+/* } */
 
-}
 
-#totalDeaths {
+#totalDeathsOne {
     color:red;
     font-size: 24px;
     font-weight: 900;
     justify-content: left;
     margin-left: 20px;
-    margin-right: 20%:
 }
 
-#totalCases {
+#totalCasesOne {
     color: blue;
     font-size: 22px;
     font-weight: 900;
     justify-content: left;
+    margin-left: 10px;
+}
+
+#totalDeathsTwo {
+    color:red;
+    font-size: 24px;
+    font-weight: 900;
+    justify-content: left;
     margin-left: 20px;
-
 }
-
-p2 {
- margin-left: 200px;
-}
-
-div.dataPull {
-    display: flex;
-    align-items: left;
-    margin-left: 100px;
-    justify-items: center;
    
 
+#totalCasesTwo {
+        color: blue;
+        font-size: 22px;
+        font-weight: 900;
+        justify-content: left;
+        margin-left: 10px;
 
 }
+p {
+    margin-left: 10px;
+
+}
+
+div.barsSection {
+    display: inline-flex;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: center;
+}
+
+div.bars1section {
+    display: inline-flex;
+    width: 40%;
+    align-items: flex-end;
+    border: 10px solid rgb(155, 137, 137);
+    height: 350px;
+}
+
+div.bars2section {
+    display: inline-flex;
+    align-items: flex-end;
+    width: 40%;
+    height: 350px;
+    border: 10px solid rgb(155, 137, 137);
+}
+
+
+
 
 source {
     font-style: italic;
     text-align:right;
     margin-right: 0:
 }
-
+/* 
 .containerChart {
     flex-wrap: wrap;
     width: 100%;
-}
+} */
 
 .bars {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: bottom;
+    align-items: baseline;
     padding: 10px;
-        
+  
 }
 
 .bar1 {
     background-color: blue;
-    /* height: 100px; */
+    height: 100px;
     margin-left: 30px;
     margin-right: 10px;
 }
@@ -116,5 +216,30 @@ source {
     height: 50px;
     margin-left: 30px;
     margin-right: 10px;
+}
+
+.bar3 {
+    background-color: blue;
+    height: 100px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.bar4 {
+    background-color: red;
+    height: 50px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+
+.button-primary {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 2.5px;
 }
 
