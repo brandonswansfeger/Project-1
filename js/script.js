@@ -20,8 +20,7 @@ const $button2 = $('#btn')
 
 
 const handleGetData = event => {
-  event.preventDefault()
-  const queryOne = $('input[id$=inputOne]').val()
+ const queryOne = $('#inputOne').val()
   $.ajax(`https://api.covidactnow.org/v2/county/${queryOne}.json?apiKey=${API_KEY}`)
    .then(function(dataOne) {
           $vaxOne.text(dataOne.metrics.vaccinationsInitiatedRatio);
@@ -76,11 +75,10 @@ const handleGetData = event => {
   });
 } 
 
-$form1.on('submit', handleGetData);
+$form1.on('onChange', handleGetData);
 
 const handleGetData2 = event => {
-  event.preventDefault()
-  const queryTwo = $('input[id$=inputTwo]').val()
+ const queryTwo = $('#inputTwo').val()
   $.ajax(`https://api.covidactnow.org/v2/county/${queryTwo}.json?apiKey=${API_KEY}`)
    .then(function(dataTwo) {
           $vaxTwo.text(dataTwo.metrics.vaccinationsInitiatedRatio);

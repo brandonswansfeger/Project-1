@@ -81,6 +81,7 @@ div.casesSection {
     display: inline-flex;
     width: 100%;
     justify-content: center;
+    position: relative;
 }
 
 div.chartOne {
@@ -175,6 +176,8 @@ div.barsSection {
     align-items: flex-end;
     width: 100%;
     justify-content: center;
+    height: auto;
+    position:relative;
 }
 
 div.bars1section {
@@ -182,7 +185,7 @@ div.bars1section {
     width: 40%;
     align-items: flex-end;
     border: 10px solid rgb(155, 137, 137);
-    height: 350px;
+    height: auto;
     justify-content: right;
 }
 
@@ -190,8 +193,9 @@ div.bars2section {
     display: inline-flex;
     align-items: flex-end;
     width: 40%;
-    height: 350px;
+    height: auto;
     border: 10px solid rgb(155, 137, 137);
+    position:relative;
 }
 
 
