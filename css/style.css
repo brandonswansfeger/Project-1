@@ -4,12 +4,15 @@ body {
     justify-self: center;
     height: 100%;
     width: 100%;
+    background-color:lightslategrey;
 }
 
 .countyFields {
     display: flex;
     justify-content: center;
-    height: 40px;
+    /* height: 40px; */
+    margin-bottom: 0;
+    margin-top:5px;
 }
 
 /* body {
@@ -40,6 +43,7 @@ h2 {
     font-size:x-large;
     font-weight: bold;
     text-align: center;
+    margin-top: 5px;
 }
 
 div.countyNamesSection {
@@ -48,6 +52,8 @@ div.countyNamesSection {
     justify-content: center;
     align-items: center;
     text-align:end;
+    margin-bottom: 0;
+    margin-top: 5px;
     
 }
 
@@ -102,10 +108,12 @@ div.casesSection {
     align-items: flex-start;
 }
 
+
 h4 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 900;
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -148,7 +156,7 @@ p {
 }
 
 #totalDeathsOne {
-    color:red;
+    color:darkred;
     font-size: 16px;
     font-weight: 900;
     justify-content: center;
@@ -208,7 +216,7 @@ div.barsSection {
     justify-content: center;
     height: auto;
     position: relative;
-    border: 2px solid rgb(155, 137, 137);
+    border: 2px solid white;
    margin: 0;
 }
 
@@ -266,7 +274,7 @@ source {
 }
 
 .bar2 {
-    background-color: red;
+    background-color: darkred;
     height: 50px;
     /* margin-left: 30px; */
     margin-left: 10%;
@@ -284,7 +292,7 @@ source {
 }
 
 .bar4 {
-    background-color: red;
+    background-color: darkred;
     height: 50px;
     /* margin-left: 30px; */
     margin-left: 10%;
