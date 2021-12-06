@@ -120,10 +120,10 @@ div.vaxTwoContainer {
 
 div.casesSection {
     display: flex;
-    flex-direction: column;
-    justify-content: left;
+    flex-direction: inline;
+    justify-content: center;
     width: 100%;
-    position: absolute;
+    position: relative;
     align-items: flex-start;
 }
 
@@ -230,10 +230,13 @@ p {
 div.barsSection {
     display: inline-flex;
     align-items: flex-end;
+    background-image: url("https://i.ibb.co/qFTBDvq/F2-DE429-A-7965-4343-9-FA6-9157-B61-C34-E9.png");
+    background-position top;
+    background-size: 100% 100%;
     align-self: stretch;
     width: 100%;
     justify-content: center;
-    height: auto;
+    height: 325px;
     position: relative;
     border: 2px solid darkslategray;
     border-radius: 6px;
