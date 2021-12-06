@@ -33,6 +33,19 @@ div.container {
   
    
 }
+h1 {
+    color: antiquewhite;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+    background-color:midnightblue;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
 
 h2 {
     color: black;
@@ -40,7 +53,7 @@ h2 {
     /* margin-left: 20px;
     margin-right: 20px; */
     width: 40%;
-    font-size:x-large;
+    font-size: large;
     font-weight: bold;
     text-align: center;
     margin-top: 5px;
@@ -59,12 +72,14 @@ div.countyNamesSection {
 
 h3 {
     font-size: 100%;
-    background: rgb(210, 183, 30);
+    background-color:midnightblue;
     align-content: center;
     justify-content: center;
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
+    color: antiquewhite;
+
 }
 
 #vaxOne {
@@ -81,7 +96,11 @@ div.vaxContainer {
     display: inline-flex;
     width: 100%;
     justify-content: center;
-   
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
 div.vaxOneContainer {
     display: flex;
@@ -216,8 +235,13 @@ div.barsSection {
     justify-content: center;
     height: auto;
     position: relative;
-    border: 2px solid white;
-   margin: 0;
+    border: 2px solid darkslategray;
+    border-radius: 6px;
+    margin: 0;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
 
 div.bars1section {
@@ -311,11 +335,11 @@ source {
     justify-content: space-evenly;
 }
 
-h1 {
+/* h1 {
     text-align: center;
     font-size: 22px;
     margin-top: 2.5px;
-}
+} */
 
 
 .aspectwrapper {
