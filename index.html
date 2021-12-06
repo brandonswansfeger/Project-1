@@ -14,13 +14,13 @@
     <title>Vaccination Rate, New Cases, Deaths, Infection Rate</title>
 </head>
 
-<body>
+<body class="aspectwrapper">
 
     <div class="container">
         <div class="title">
             <h1>Vaccination Rate, Cases,and Deaths by County</h1>
         </div>
-
+<div class="countyFields">
         <form id='form1'>
               <select id="inputOne" name="inputOne" class="u-full-width" onChange="handleGetData()" value="">
                 <option value="01001">01001</option>
@@ -6491,6 +6491,7 @@
                 <option value="78020">St. John, VI</option>
                 </select>
         </form>
+    </div>
         <div class="countyNamesSection">
             <h2 id='countyNameOne'></h2>
             <h2 id='countyNameTwo'></h2>
@@ -6506,33 +6507,32 @@
             </div>            
         </div>
         <div class="casesSection">
-            <div class="chartOne">
-                    <p class="p2">Cases </br><span style="font-size:10pt">(per 100)</span></p>
-                    <p id='totalCasesOne'></p>
-                    <div class="gap"></div>
-                    <p class="p2">Deaths </br>(per 10,000)</p>
-                    <p id='totalDeathsOne'></p>
-            </div>
-       
-            <div class="chartTwo">
-                    <p>Cases </br> per 100</p>
-                    <p id='totalCasesTwo'></p>
-                    <p class="p2">Deaths</br> per 10,000</p>
-                    <p id='totalDeathsTwo'></p>
-            </div>
-        </div>
+                    <h4 style="color:blue" class="p2">Cases (per 100)</h4>
+                    <h4 style="color:red"class="p2">Deaths (per 10,000)</h4>
+                  </div>
+        <div class="numbers">
+      
+      
+     
         <div class="barsSection">
             <div class="bars1section">
-                    <div class="bar1">Cases</div>
-                    <div class="bar2">Deaths</div>
+                    <div style="width:40px; margin-left:10%; margin-right: 0px" class="bar1"><span id='totalCasesOne'></span></div>
+             
+                  
+                    <div style="width:40px; margin-right:10px" class="bar2"><span style="color:white" id="totalDeathsOne"></span></div>
+                    
             </div>
             <div class="bars2section">
-                <div class="bar3">Cases</div>
-                <div class="bar4">Deaths</div>
+                <div style="width:40px; margin-left:10px; margin-right: 0px" class="bar3"><span id='totalCasesTwo'></span></div>
+           
+                <div style="width:40px; margin-right:10%" class="bar4"><span id='totalDeathsTwo'></span></div>
+               
             </div>
-        </div>
+        </div> 
+        
     </div>
-    <div class="source">
+   <div class="source">
         <p>Source: Covid Act Now (CAN) https://covidactnow.org</p>
     </div>
 </body>
+</html>

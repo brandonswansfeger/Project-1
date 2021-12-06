@@ -33,7 +33,7 @@ const handleGetData = event => {
           // console.log(casesPer100)
           totalCasesOne = (dataOne.actuals.cases)
           // console.log(totalCases)
-          casesScaleOne= casesPer100One * 10
+          casesScaleOne= casesPer100One * 5
           $(".bar1").height(casesScaleOne + "px");
           
           function round(value, precision) {
@@ -48,7 +48,7 @@ const handleGetData = event => {
           deathsPerOne = (dataOne.actuals.deaths) / popOne
           deathsPer100One = deathsPerOne * 10000
         //  console.log(totalDeaths)
-          deathsScaleOne = deathsPer100One* 10
+          deathsScaleOne = deathsPer100One* 5
           $(".bar2").height(deathsScaleOne + "px");
           
           function round(value, precision) {
@@ -56,7 +56,7 @@ const handleGetData = event => {
             return Math.round(value * multiplier) / multiplier;
           }
           
-          roundedDeathsOne = round(deathsPer100One, 1)
+          roundedDeathsOne = round(deathsPer100One, 1);
                
           $totalDeathsOne.text(roundedDeathsOne);
           
@@ -91,7 +91,7 @@ const handleGetData2 = event => {
           // console.log(casesPer100)
           totalCasesTwo = (dataTwo.actuals.cases)
           // console.log(totalCases)
-          casesScaleTwo = casesPer100Two * 10
+          casesScaleTwo = casesPer100Two * 5
           $(".bar3").height(casesScaleTwo + "px");
           
           function round(value, precision) {
@@ -106,7 +106,7 @@ const handleGetData2 = event => {
           deathsPerTwo = (dataTwo.actuals.deaths) / popTwo
           deathsPer100Two = deathsPerTwo * 10000
         //  console.log(totalDeaths)
-          deathsScaleTwo = deathsPer100Two * 10
+          deathsScaleTwo = deathsPer100Two * 5
           $(".bar4").height(deathsScaleTwo + "px");
           
           function round(value, precision) {
@@ -131,9 +131,9 @@ const handleGetData2 = event => {
       console.log(error);
   });
 } 
-$form2.on('submit', handleGetData2);
+$form2.on('onChange', handleGetData2);
 
-$(".bar1").height("50px");
+// $(".bar1").height("50px");
 
 
 
