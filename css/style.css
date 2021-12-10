@@ -298,6 +298,9 @@ source {
     margin-right: 10%;
     color: white;
     font-size: 80%;
+    -moz-box-shadow: 10px 10px 16px #000000;
+    -webkit-box-shadow: 10px 10px 16px #000000;
+    box-shadow: 10px 10px 16px #000000;
 }
 
 .bar2 {
@@ -307,6 +310,9 @@ source {
     margin-left: 10%;
     color: white;
     font-size: 80%;
+    -moz-box-shadow: 10px 10px 16px #000000;
+    -webkit-box-shadow: 10px 10px 16px #000000;
+    box-shadow: 10px 10px 16px #000000;
 }
 
 .bar3 {
@@ -316,6 +322,9 @@ source {
     margin-right: 10%;
     color: white;
     font-size: 80%;
+    -moz-box-shadow: 10px 10px 16px #000000;
+    -webkit-box-shadow: 10px 10px 16px #000000;
+    box-shadow: 10px 10px 16px #000000;
 }
 
 .bar4 {
@@ -325,6 +334,9 @@ source {
     margin-left: 10%;
     color: white;
     font-size: 80%;
+    -moz-box-shadow: 10px 10px 16px #000000;
+    -webkit-box-shadow: 10px 10px 16px #000000;
+    box-shadow: 10px 10px 16px #000000;
 }
 
 
