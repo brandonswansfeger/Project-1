@@ -45,12 +45,8 @@ Covid-19 Vaccination Rate (first dose), Total Cases, and Total Deaths by County
 
 
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+
+
 
 <h3 align="center">County Comparison:
 Covid-19 Vaccination Rate, Case Rate, and Death Rate</h3>
