@@ -122,6 +122,10 @@ To get a local copy up and running follow these simple example steps.
    ```
    const API_KEY = 'ENTER YOUR API';
    ```
+5.  
+  ```sh
+   npm install
+   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -130,7 +134,9 @@ To get a local copy up and running follow these simple example steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. All commercial entities wishing to access the API should contact api@covidactnow.org to acquire a commercial license.
+
+commercial users are defined as any individual or entity engaged in commercial activities, such as selling goods or services. Non-commercial users can freely download, use, share, modify, or build upon the source code.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
