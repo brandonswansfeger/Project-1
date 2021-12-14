@@ -207,13 +207,13 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/brandonswansfeger/Project-1.svg?style=for-the-badge
 [contributors-url]: https://github.com/brandonswansfeger/Project-1/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/brandonswansfeger/Project-1.svg?style=for-the-badge
 [forks-url]: https://github.com/brandonswansfeger/Project-1/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/brandonswansfeger/Project-1.svg?style=for-the-badge
 [stars-url]: https://github.com/brandonswansfeger/Project-1/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/brandonswansfeger/Project-1.svg?style=for-the-badge
 [issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/brandonswansfeger/Project-1.svg?style=for-the-badge
 [license-url]: https://github.com/brandonswansfeger/Project-1/blob/version-2/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/brandonswansfeger
