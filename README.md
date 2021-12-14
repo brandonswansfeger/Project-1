@@ -147,7 +147,7 @@ This is an example of how to list things you need to use the software and how to
    npm install
    ```
 4. Enter your API in `config.js`
-   ```js
+   ```jsmnn
    const API_KEY = 'ENTER YOUR API';
    ```
 
@@ -210,7 +210,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - brandonswansfeger@me.com
 
 Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
 
