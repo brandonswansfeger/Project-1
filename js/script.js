@@ -1,4 +1,4 @@
-const API_KEY = 'ef19192120864351a616b5a6401950c1'
+const API_KEY = process.env.API_KEY
 const BASE_URL = 'https://api.covidactnow.org/v2/county/'
 
 const $form1 = $('#form1')
