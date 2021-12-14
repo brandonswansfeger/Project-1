@@ -240,5 +240,5 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [license-url]: https://github.com/brandonswansfeger/Project-1/blob/version-2/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/brandonswansfeger
-[product-screenshot]:https://github.com/brandonswansfeger/Project-1/blob/version-2/screenshot_project1.PNG?raw=true
+[product-screenshot]:https://github.com/brandonswansfeger/Project-1/blob/version-2/images/screenshot_project1.PNG?raw=true
 [product-logo]:https://github.com/brandonswansfeger/Project-1/blob/version-2/screenshot_project1.PNG?raw=true
