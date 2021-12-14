@@ -2,7 +2,7 @@
 
 
 
-<img src="https://github.com/brandonswansfeger/Project-1/blob/version-2/images/GettyImages-1210455332.jpg?raw=true" align="center" height="250" width="80%" >
+<img src="https://github.com/brandonswansfeger/Project-1/blob/version-2/images/GettyImages-1210455332.jpg?raw=true" align="center" height="250" width="75%" >
 
 <!-- PROJECT SHIELDS -->
 <!--
@@ -73,15 +73,13 @@ Covid-19 Vaccination Rate, Case Rate, and Death Rate</h3>
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+This app allows users to compare two counties side-side-by-side in terms of current partial vaccination rate as defined by persons who have receievd at least one dose, along with current number of cases per 100 persons, and cutrent nunmber of deaths per 10,000 persons. 
 
-Covid-19 Vaccination Rate (first dose), Total Cases, and Total Deaths by County
-
-Souce data from Covid Act Now (CAN) at https://covidactnow.org
+The data is pulled using an API from Covid Act Now (CAN) at https://covidactnow.org and upadted daily at non Eastern time. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 ### Built With
 
