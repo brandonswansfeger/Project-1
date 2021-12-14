@@ -79,12 +79,10 @@ The data is pulled using an API from Covid Act Now (CAN) at https://covidactnow.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<div>
-<img src="https://github.com/brandonswansfeger/Project-1/blob/version-2/images/Capture.PNG?raw=true" align="center">
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-  </div>
+<div align="center">
+  <img src="https://github.com/brandonswansfeger/Project-1/blob/version-2/images/Capture.PNG?raw=true" align="center">
+  [![Product Name Screen Shot][product-screenshot]](https://example.com)
+</div>
 
 ### Built With
 
