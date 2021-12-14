@@ -1,33 +1,8 @@
-# Project-1 - Covid-19 Key Indicators by County 
-
-Covid-19 Vaccination Rate (first dose), Total Cases, and Total Deaths by County
-
-    Souce data from Covid Act Now (CAN) at https://covidactnow.org
-
-# Technologies Used
-
--HTML
--CSS
--JavaScript/jQuery
-
-# Screenshots
-
-![alt text](https://github.com/brandonswansfeger/Project-1/blob/version-2/screenshot_project1.PNG?raw=true "screen shot")
-
-# Geting Started
-
-(https://brandonswansfeger.github.io/Project-1/ "Link to Project")
-
-# Future Enhancements
-
-- Drop down list for selecting county/FIPS code
-- additional charts for comparing multiple counties
-
 <div id="top"></div>
 
 
-<img src="https://github.com/brandonswansfeger/Project-1/blob/version-2/images/GettyImages-1210455332.jpg?raw=true width="48">
 
+<img src="https://github.com/brandonswansfeger/Project-1/blob/version-2/images/GettyImages-1210455332.jpg?raw=true" align="center" height="250" width="75%" >
 
 <!-- PROJECT SHIELDS -->
 <!--
@@ -98,24 +73,23 @@ Covid-19 Vaccination Rate, Case Rate, and Death Rate</h3>
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+This app allows users to compare two counties side-side-by-side in terms of current partial vaccination rate as defined by persons who have receievd at least one dose, along with current number of cases per 100 persons, and cutrent nunmber of deaths per 10,000 persons. 
 
-About the Projectt 
+The data is pulled using an API from Covid Act Now (CAN) at https://covidactnow.org and updated daily at noon Eastern time. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
+<div align="center">
+  <img src="https://github.com/brandonswansfeger/Project-1/blob/version-2/images/Capture.PNG?raw=true" align="center">
+    <img src="https://github.com/brandonswansfeger/Project-1/blob/version-2/images/screenshot_project1.PNG?raw=true" align="center"> 
+</div>
 
 ### Built With
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [Javascript](https://www.javascript.com/)
+* [HTML](https://html.com/)
+* [Skeleton](http://getskeleton.com/)
+* [API/JQuery/AJAX](https://api.jquery.com/jquery.ajax/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -145,8 +119,12 @@ To get a local copy up and running follow these simple example steps.
    npm install
    ```
 4. Enter your API in `js/script.js`
-   ```jsmnn
+   ```
    const API_KEY = 'ENTER YOUR API';
+   ```
+5.  
+  ```sh
+   npm install
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -156,7 +134,9 @@ To get a local copy up and running follow these simple example steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. All commercial entities wishing to access the API should contact api@covidactnow.org to acquire a commercial license.
+
+commercial users are defined as any individual or entity engaged in commercial activities, such as selling goods or services. Non-commercial users can freely download, use, share, modify, or build upon the source code.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
@@ -201,6 +181,8 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
+Data from Covid Act Now API is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International</a>.
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -208,7 +190,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - brandonswansfeger@me.com
+brandonswansfeger@me.com
 
 Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
 
@@ -228,17 +210,17 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/brandonswansfeger/Project-1.svg?style=for-the-badge
 [contributors-url]: https://github.com/brandonswansfeger/Project-1/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/brandonswansfeger/Project-1.svg?style=for-the-badge
 [forks-url]: https://github.com/brandonswansfeger/Project-1/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/brandonswansfeger/Project-1.svg?style=for-the-badge
 [stars-url]: https://github.com/brandonswansfeger/Project-1/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/brandonswansfeger/Project-1.svg?style=for-the-badge
 [issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/brandonswansfeger/Project-1.svg?style=for-the-badge
 [license-url]: https://github.com/brandonswansfeger/Project-1/blob/version-2/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/brandonswansfeger
-[product-screenshot]:https://github.com/brandonswansfeger/Project-1/blob/version-2/screenshot_project1.PNG?raw=true
+[product-screenshot]:https://github.com/brandonswansfeger/Project-1/blob/version-2/images/screenshot_project1.PNG?raw=true
 [product-logo]:https://github.com/brandonswansfeger/Project-1/blob/version-2/screenshot_project1.PNG?raw=true
