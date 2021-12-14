@@ -75,7 +75,7 @@ Covid-19 Vaccination Rate, Case Rate, and Death Rate</h3>
 
 This app allows users to compare two counties side-side-by-side in terms of current partial vaccination rate as defined by persons who have receievd at least one dose, along with current number of cases per 100 persons, and cutrent nunmber of deaths per 10,000 persons. 
 
-The data is pulled using an API from Covid Act Now (CAN) at https://covidactnow.org and upadted daily at non Eastern time. 
+The data is pulled using an API from Covid Act Now (CAN) at https://covidactnow.org and updated daily at noon Eastern time. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -120,7 +120,7 @@ To get a local copy up and running follow these simple example steps.
    npm install
    ```
 4. Enter your API in `js/script.js`
-   ```jsmnn
+   ```
    const API_KEY = 'ENTER YOUR API';
    ```
 
