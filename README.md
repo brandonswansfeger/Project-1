@@ -114,18 +114,15 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    git clone https://github.com/brandonswansfeger/Project-1.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `js/script.js`
+3. Enter your API in `js/script.js`
    ```
    const API_KEY = 'ENTER YOUR API';
    ```
-5.  
-  ```sh
-   npm install
-   ```
+4.  Open the root directory in VS Code and click to Go Live from the status bar to turn the server on/off. 
+
+Or
+
+Open the Command Pallete by pressing F1 or ctrl+shift+P and type Live Server: Open With Live Server to start a server or type Live Server: Stop Live Server to stop a server.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -134,9 +131,9 @@ To get a local copy up and running follow these simple example steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. All commercial entities wishing to access the API should contact api@covidactnow.org to acquire a commercial license.
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. 
 
-commercial users are defined as any individual or entity engaged in commercial activities, such as selling goods or services. Non-commercial users can freely download, use, share, modify, or build upon the source code.
+A
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
@@ -183,6 +180,10 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Data from Covid Act Now API is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International</a>.
 
+All commercial entities wishing to access the API should contact api@covidactnow.org to acquire a commercial license.
+
+commercial users are defined as any individual or entity engaged in commercial activities, such as selling goods or services. Non-commercial users can freely download, use, share, modify, or build upon the source code.
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -198,12 +199,6 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
